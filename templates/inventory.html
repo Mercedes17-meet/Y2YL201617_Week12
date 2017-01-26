@@ -1,7 +1,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
 </head>
-<div class="container">
+<div class="container-fluid">
 {% extends "layout.html" %}
 {% block title %}Inventory{% endblock %}
 {% block body %}
@@ -14,7 +14,7 @@
 	{% for item in items %}
    	<a href={{url_for('product', product_id = item.id)}}>
       	<p>{{item.name}}</p>
-      	<img src={{item.photo}} height="250" >
+      	<img src={{item.photo}} height="300" >
   	</a>
   	{% endfor %}
 </div>

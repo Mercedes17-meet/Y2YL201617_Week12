@@ -1,15 +1,18 @@
-.container {
+.container-fluid{
     margin: 0 auto;
     max-width: 18000px; /* A really big width */
-    background-color : purple
+    background-image: url("http://www.actswithscience.com/wp-content/uploads/2014/04/TEXTURA_AZUL2.jpg")
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.container {
+@media only screen and (min-device-width : 320px) and (max-device-width : 550px) {
+	.container-fluid {
+	font-size: 30px
+
     margin: 0 auto;
     max-width: 400px; /* A really big width */
-    background-color : yellow
+    
+    background-image: url("http://www.actswithscience.com/wp-content/uploads/2014/04/TEXTURA_AZUL2.jpg")
 }
 
 }
