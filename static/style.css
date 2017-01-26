@@ -1,1 +1,5 @@
-//Add your styling here
+.container {
+    margin: 0 auto;
+    max-width: 18000px; /* A really big width */
+    background-color : white
+}
