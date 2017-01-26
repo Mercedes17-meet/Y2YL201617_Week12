@@ -1,5 +1,10 @@
 .container {
     margin: 0 auto;
     max-width: 18000px; /* A really big width */
-    background-color : white
+    background-color : purple
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+background-color : yellow
 }
