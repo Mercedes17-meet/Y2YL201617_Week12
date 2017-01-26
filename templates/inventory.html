@@ -11,12 +11,22 @@
 
 {% else %}
 <div class="product container-fluid">
+	<table>
+		<tr>
+			<td>Name</td><td>Price</td><td></td><td></td><td>Picture</td>
+		</tr>
 	{% for item in items %}
+	
+		<tr>
+			<td>{{item.name}}</td><td>{{item.price}}</td><td></td><td></td><td><img src={{item.photo}} height="300" ></td>
+		</tr>
+	
    	<a href={{url_for('product', product_id = item.id)}}>
       	<p>{{item.name}}</p>
       	<img src={{item.photo}} height="300" >
   	</a>
   	{% endfor %}
+  	</table>
 </div>
 
 {% endif %}
