@@ -10,7 +10,7 @@
 <p> There are currently no items in the catalog. </p>
 
 {% else %}
-<div class="product">
+<div class="product container-fluid">
 	{% for item in items %}
    	<a href={{url_for('product', product_id = item.id)}}>
       	<p>{{item.name}}</p>
